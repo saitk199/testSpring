@@ -14,11 +14,13 @@ import java.util.Date;
 import java.util.List;
 
 import com.opencsv.*;
+import org.springframework.stereotype.Component;
 
-public class DepositsRepositoryImpl implements DepositsRepository {
-    @Override
+@Component
+public class DepositRepository {
+
     public List<Deposit> getAllDeposit() {
-        File sourceFile = new File("DepositData.csv");
+        File sourceFile = new File("src\\DepositData.csv");
         DateFormat format = new SimpleDateFormat("dd.MM.yyyy");
 
         List<Deposit> deposits = new ArrayList<>();

@@ -6,5 +6,5 @@ import java.util.List;
 import com.example.testSpring.model.*;
 
 public interface DepositManager {
-    List<Deposit> getAll();;
+    List<Deposit> getAll();
 }
